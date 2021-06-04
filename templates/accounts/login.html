@@ -1,0 +1,26 @@
+{% extends 'base-defult.html' %}
+
+{% load static %}
+
+{% block main-content-root %}
+    <div class="rs-login pt-100 pb-100 md-pt-70 md-pb-70">
+        <div class="container">
+            <div class="noticed">
+                <div class="main-part">
+                    <div class="method-account">
+                        <h2 class="login">Login</h2>
+                        <form method="post" action="{% url 'login' %}">
+                            {% csrf_token %}
+                            {{ form.username }}
+                            {{ form.password }}
+                            <button type="submit" class="readon submit-btn">login</button>
+                            <div class="last-password">
+                                <p>Вы не зарегистрированы? <a href="{% url 'signup' %}">Создать аккаунт</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

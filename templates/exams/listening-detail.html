@@ -1,0 +1,32 @@
+{% extends 'base-defult.html' %}
+
+{% load static %}
+
+{% block breadcrumbs %}
+    {{ listening.title }}
+{% endblock %}
+
+{% block path %}
+    <li style="color: #ff5421 !important;">{{ listening.title }}</li>
+{% endblock %}
+
+{% block main-content %}
+    <!-- Popular Courses Section Start -->
+    <div class="rs-latest-couses orange-color pt-100 pb-100 md-pt-70 md-pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <audio controls="" name="media" data-video="0" class="w-100">
+                        <source src="{{ listening.audio_file.url }}" type="audio/mpeg">
+                    </audio>
+                    <form action="{% url 'listening-detail' listening.id %}" method="post" id="quiz-form">
+                        {% csrf_token %}
+                        <textarea name="listening_content" id="listening_content" cols="80" rows="10"
+                                  class="d-block mx-auto my-2"></textarea>
+                        <button type="submit" class="btn btn-success btn-lg mx-auto my-4 d-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

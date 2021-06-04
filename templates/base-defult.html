@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+    <body class="defult-home">
+
+    {# loader #}
+    {% include '_partial/loader.html' %}
+
+    {# header #}
+    {% include '_partial/_defult/header-defult.html' %}
+
+    <div class="main-content">
+        {% block main-content-root %}
+            <div class="rs-breadcrumbs breadcrumbs-overlay">
+                <div class="breadcrumbs-img">
+{#                    <img src="{% static 'images/breadcrumbs/image-top-1.jpg' %}" alt="Breadcrumbs Image">#}
+                    <img src="https://static.homeschoolacademy.com/wp-content/uploads/2019/03/Middle-School-LOC-2-1024x280.jpg" alt="Breadcrumbs Image">
+                </div>
+                <div class="breadcrumbs-text white-color padding">
+                    <h1 class="page-title white-color" style="color: #ff5421 !important;">
+                        {% block breadcrumbs %}
+                        {% endblock %}
+                    </h1>
+                    <ul>
+                        <li>
+                            <a class="active" href="index.html">Главная</a>
+                        </li>
+                        {% block path %}
+                        {% endblock %}
+                    </ul>
+                </div>
+            </div>
+
+            {% block main-content %}
+            {% endblock main-content %}
+
+            {% include '_partial/_defult/_newsletter.html' %}
+        {% endblock main-content-root %}
+    </div>
+    {% include '_partial/_defult/footer-defult.html' %}
+
+    {% include '_partial/scroll-up.html' %}
+
+    {% include '_partial/modals/search-modal.html' %}
+
+    {% block script %}
+        <script src="{% static 'js/modernizr-2.8.3.min.js' %}"></script>
+        <!-- jquery latest version -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <!-- Bootstrap v4.4.1 js -->
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <!-- Menu js -->
+        <script src="{% static 'js/rsmenu-main.js' %}"></script>
+        <!-- op nav js -->
+        <script src="{% static 'js/jquery.nav.js' %}"></script>
+        <!-- owl.carousel js -->
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <!-- Slick js -->
+        <script src="{% static 'js/slick.min.js' %}"></script>
+        <!-- isotope.pkgd.min js -->
+        <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+        <!-- imagesloaded.pkgd.min js -->
+        <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+        <!-- wow js -->
+        <script src="{% static 'js/wow.min.js' %}"></script>
+        <!-- Skill bar js -->
+        <script src="{% static 'js/skill.bars.jquery.js' %}"></script>
+        <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+        <!-- counter top js -->
+        <script src="{% static 'js/waypoints.min.js' %}"></script>
+        <!-- video js -->
+        <script src="{% static 'js/jquery.mb.YTPlayer.min.js' %}"></script>
+        <!-- magnific popup js -->
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- plugins js -->
+        <script src="{% static 'js/plugins.js' %}"></script>
+        <!-- contact form js -->
+        <script src="{% static 'js/contact.form.js' %}"></script>
+        <!-- main js -->
+        <script src="{% static 'js/main.js' %}"></script>
+    {% endblock script %}
+
+    </body>
+{% endblock body %}

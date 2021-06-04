@@ -1,0 +1,96 @@
+{% extends 'base-defult.html' %}
+
+{% load static %}
+
+{% block main-content-root %}
+    <section class="register-section pt-100 pb-100">
+        <div class="container">
+            <div class="register-box">
+
+                <div class="sec-title text-center mb-30">
+                    <h2 class="title mb-10">Create New Account</h2>
+                </div>
+
+                <div class="styled-form">
+                    <form id="contact-form" method="post" action="{% url 'signup' %}">
+                        {% csrf_token %}
+                        <div class="row clearfix">
+                            <!-- Form Group -->
+                            <div class="form-group col-lg-12 mb-25">
+                                <label for="{{ form.first_name.id_for_label }}">{{ form.first_name.label_tag }}</label>
+                                {{ form.first_name }}
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group col-lg-12">
+                                <label for="{{ form.last_name.id_for_label }}">{{ form.last_name.label_tag }}</label>
+                                {{ form.last_name }}
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group col-lg-12">
+                                <label for="{{ form.email.id_for_label }}">{{ form.email.label_tag }}</label>
+                                {{ form.email }}
+                            </div>
+
+                            <div class="form-group col-lg-12">
+                                <label for="{{ form.username.id_for_label }}">{{ form.username.label_tag }}</label>
+                                {{ form.username }}
+                            </div>
+
+                            <div class="form-group col-lg-12">
+                                <label for="{{ form.password1.id_for_label }}">{{ form.password1.label_tag }}</label>
+                                {{ form.password1 }}
+                            </div>
+
+                            <div class="form-group col-lg-12">
+                                <label for="{{ form.password2.id_for_label }}">{{ form.password2.label_tag }}</label>
+                                {{ form.password2 }}
+                            </div>
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                <div class="row clearfix">
+                                    <!-- Column -->
+                                    <div class="column col-lg-3 col-md-4 col-sm-12">
+                                        <div class="radio-box">
+                                            <input type="radio" name="remember-password" id="type-1">
+                                        </div>
+                                    </div>
+                                    <!-- Column -->
+                                    <div class="column col-lg-3 col-md-4 col-sm-12">
+                                        <div class="radio-box">
+                                            <input type="radio" name="remember-password" id="type-2">
+                                        </div>
+                                    </div>
+                                    <!-- Column -->
+                                    <div class="column col-lg-3 col-md-4 col-sm-12">
+                                        <div class="radio-box">
+                                            <input type="radio" name="remember-password" id="type-3">
+                                        </div>
+                                    </div>
+                                    <!-- Column -->
+                                    <div class="column col-lg-12 col-md-12 col-sm-12">
+                                        <div class="check-box">
+                                            <input type="checkbox" name="remember-password" id="type-4">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12 text-center">
+                                <button type="submit" class="readon register-btn"><span class="txt">Sign Up</span>
+                                </button>
+                            </div>
+
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                <div class="users">Already have an account? <a href="{% url 'login' %}">Sign In</a></div>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

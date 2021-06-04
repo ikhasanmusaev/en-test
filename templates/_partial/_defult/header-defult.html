@@ -1,0 +1,256 @@
+{% load static %}
+
+<div class="full-width-header header-style1 home8-style4">
+    <!--Header Start-->
+    <header id="rs-header" class="rs-header">
+        <!-- Menu Start -->
+        <div class="menu-area menu-sticky innerpage">
+            <div class="container">
+                <div class="row y-middle">
+                    <div class="col-lg-2">
+                        <div class="logo-cat-wrap">
+                            <div class="logo-part">
+                                <a href="{% url 'index' %}">
+                                    <img src="{% static 'images/logo1.png' %}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 text-right">
+                        <div class="rs-menu-area">
+                            <div class="main-menu">
+                                <div class="mobile-menu">
+                                    <a class="rs-menu-toggle">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                </div>
+                                <nav class="rs-menu">
+                                    <ul class="nav-menu">
+                                        <li class="rs-mega-menu mega-rs menu-item-has-children"><a
+                                                href="{% url 'index' %}">Главная</a>
+                                        </li>
+                                        <li class="menu-item-has-children {% if tag == 'about' %} current-menu-item {% endif %}">
+                                            <a href="{% url 'about' %}">О нас</a>
+                                        </li>
+
+                                        <li class="menu-item-has-children {% if tag == 'exams' %} current-menu-item {% endif %}">
+                                            <a>Тесты</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="{% url 'test-list' %}">Grammar</a></li>
+                                                <li><a href="{% url 'listening-list' %}">Listening</a></li>
+                                            </ul>
+                                        </li>
+
+{#                                        <li class="menu-item-has-children">#}
+{#                                            <a href="#">Pages</a>#}
+{#                                            <ul class="sub-menu">#}
+{#                                                <li class="menu-item-has-children">#}
+{#                                                    <a href="#">Team</a>#}
+{#                                                    <ul class="sub-menu">#}
+{#                                                        <li><a href="team.html">Team One</a></li>#}
+{#                                                        <li><a href="team2.html">Team Two</a></li>#}
+{#                                                        <li><a href="team-single.html">Team Single</a></li>#}
+{#                                                    </ul>#}
+{#                                                </li>#}
+{#                                                <li class="menu-item-has-children">#}
+{#                                                    <a href="#">Event</a>#}
+{#                                                    <ul class="sub-menu">#}
+{#                                                        <li><a href="events-style1.html">Event One</a></li>#}
+{#                                                        <li><a href="events-style2.html">Event Two</a></li>#}
+{#                                                        <li><a href="events-style3.html">Event Three</a></li>#}
+{#                                                    </ul>#}
+{#                                                </li>#}
+{#                                                <li class="menu-item-has-children">#}
+{#                                                    <a href="#">Gallery</a>#}
+{#                                                    <ul class="sub-menu">#}
+{#                                                        <li><a href="gallery-style1.html">Gallery One</a></li>#}
+{#                                                        <li><a href="gallery-style2.html">Gallery Two</a></li>#}
+{#                                                        <li><a href="gallery-style3.html">Gallery Three</a></li>#}
+{#                                                    </ul>#}
+{#                                                </li>#}
+{#                                                <li class="menu-item-has-children">#}
+{#                                                    <a href="#">Shop</a>#}
+{#                                                    <ul class="sub-menu">#}
+{#                                                        <li><a href="shop.html">Shop</a></li>#}
+{#                                                        <li><a href="shop-single.html">Shop Single</a></li>#}
+{#                                                        <li><a href="cart.html">Cart</a></li>#}
+{#                                                        <li><a href="checkout.html">Checkout</a></li>#}
+{#                                                    </ul>#}
+{#                                                </li>#}
+{#                                                <li class="menu-item-has-children">#}
+{#                                                    <a href="#">Others</a>#}
+{#                                                    <ul class="sub-menu">#}
+{#                                                        <li><a href="faq.html">FAQ</a></li>#}
+{#                                                        <li><a href="error.html">404 Page</a></li>#}
+{#                                                        <li><a href="login.html">Login</a></li>#}
+{#                                                        <li><a href="register.html">Register</a></li>#}
+{#                                                    </ul>#}
+{#                                                </li>#}
+{#                                            </ul>#}
+{#                                        </li>#}
+{##}
+{#                                        <li class="menu-item-has-children">#}
+{#                                            <a href="#">Blog</a>#}
+{#                                            <ul class="sub-menu">#}
+{#                                                <li><a href="blog.html">Blog</a></li>#}
+{#                                                <li class="menu-item-has-children">#}
+{#                                                    <a href="#">Blog Sidebar</a>#}
+{#                                                    <ul class="sub-menu">#}
+{#                                                        <li><a href="blog-left.html">Blog Left Sidebar</a></li>#}
+{#                                                        <li><a href="blog-right.html">Blog Right Sidebar</a></li>#}
+{#                                                    </ul>#}
+{#                                                </li>#}
+{#                                                <li class="menu-item-has-children">#}
+{#                                                    <a href="#">Single Post</a>#}
+{#                                                    <ul class="sub-menu">#}
+{#                                                        <li><a href="blog-post-left.html">Post Left Sidebar</a></li>#}
+{#                                                        <li><a href="blog-post-right.html">Post Right Sidebar</a></li>#}
+{#                                                        <li><a href="blog-single.html">Full Width Post</a></li>#}
+{#                                                    </ul>#}
+{#                                                </li>#}
+{#                                            </ul>#}
+{#                                        </li>#}
+
+                                        <li class="menu-item-has-children {% if tag == 'contact' %} current-menu-item {% endif %}">
+                                            <a href="{% url 'contact' %}">Контакт</a>
+                                        </li>
+                                    </ul> <!-- //.nav-menu -->
+                                </nav>
+                            </div> <!-- //.main-menu -->
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 text-right">
+                        <div class="expand-btn-inner">
+                            <ul>
+                                <li>
+                                    <a class="hidden-xs rs-search" data-target=".search-modal" data-toggle="modal"
+                                       href="#">
+                                        <i class="flaticon-search"></i>
+                                    </a>
+                                </li>
+{#                                <li class="icon-bar cart-inner no-border mini-cart-active">#}
+{#                                    <a class="cart-icon">#}
+{#                                        <!-- <span class="cart-count">2</span> -->#}
+{#                                        <i class="fa fa-shopping-bag"></i>#}
+{#                                    </a>#}
+{#                                    <div class="woocommerce-mini-cart text-left">#}
+{#                                        <div class="cart-bottom-part">#}
+{#                                            <ul class="cart-icon-product-list">#}
+{#                                                <li class="display-flex">#}
+{#                                                    <div class="icon-cart">#}
+{#                                                        <a href="#"><i class="fa fa-times"></i></a>#}
+{#                                                    </div>#}
+{#                                                    <div class="product-info">#}
+{#                                                        <a href="cart.html">Law Book</a><br>#}
+{#                                                        <span class="quantity">1 × $30.00</span>#}
+{#                                                    </div>#}
+{#                                                    <div class="product-image">#}
+{#                                                        <a href="cart.html"><img src="{% static 'images/shop/1.jpg' %}"#}
+{#                                                                                 alt="Product Image"></a>#}
+{#                                                    </div>#}
+{#                                                </li>#}
+{#                                                <li class="display-flex">#}
+{#                                                    <div class="icon-cart">#}
+{#                                                        <a href="#"><i class="fa fa-times"></i></a>#}
+{#                                                    </div>#}
+{#                                                    <div class="product-info">#}
+{#                                                        <a href="cart.html">Spirit Level</a><br>#}
+{#                                                        <span class="quantity">1 × $30.00</span>#}
+{#                                                    </div>#}
+{#                                                    <div class="product-image">#}
+{#                                                        <a href="cart.html"><img src="{% static 'images/shop/2.jpg' %}"#}
+{#                                                                                 alt="Product Image"></a>#}
+{#                                                    </div>#}
+{#                                                </li>#}
+{#                                            </ul>#}
+{##}
+{#                                            <div class="total-price text-center">#}
+{#                                                <span class="subtotal">Subtotal:</span>#}
+{#                                                <span class="current-price">$85.00</span>#}
+{#                                            </div>#}
+{##}
+{#                                            <div class="cart-btn text-center">#}
+{#                                                <a class="crt-btn btn1" href="cart.html">View Cart</a>#}
+{#                                                <a class="crt-btn btn2" href="checkout.html">Check Out</a>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </li>#}
+                            </ul>
+{#                            <a id="nav-expander" class="nav-expander style2">#}
+{#                                <span class="dot1"></span>#}
+{#                                <span class="dot2"></span>#}
+{#                                <span class="dot3"></span>#}
+{#                            </a>#}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+        <!-- Canvas Menu start -->
+        <nav class="right_menu_togle hidden-md">
+            <div class="close-btn">
+                <div id="nav-close">
+                    <div class="line">
+                        <span class="line1"></span><span class="line2"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas-logo">
+                <a href="index.html"><img src="{% static 'images/dark-logo.png' %}" alt="logo"></a>
+            </div>
+            <div class="offcanvas-text">
+                <p>We denounce with righteous indige nationality and dislike men who are so beguiled and demo by the
+                    charms of pleasure of the moment data com so blinded by desire.</p>
+            </div>
+            <div class="offcanvas-gallery">
+                <div class="gallery-img">
+                    <a class="image-popup" href="{% static 'images/gallery/1.jpg' %}"><img
+                            src="{% static 'images/gallery/1.jpg' %}"
+                            alt=""></a>
+                </div>
+                <div class="gallery-img">
+                    <a class="image-popup" href="{% static 'images/gallery/2.jpg' %}"><img
+                            src="{% static 'images/gallery/2.jpg' %}"
+                            alt=""></a>
+                </div>
+                <div class="gallery-img">
+                    <a class="image-popup" href="{% static 'images/gallery/3.jpg' %}"><img
+                            src="{% static 'images/gallery/3.jpg' %}"
+                            alt=""></a>
+                </div>
+                <div class="gallery-img">
+                    <a class="image-popup" href="{% static 'images/gallery/4.jpg' %}"><img
+                            src="{% static 'images/gallery/4.jpg' %}"
+                            alt=""></a>
+                </div>
+                <div class="gallery-img">
+                    <a class="image-popup" href="{% static 'images/gallery/5.jpg' %}"><img
+                            src="{% static 'images/gallery/5.jpg' %}"
+                            alt=""></a>
+                </div>
+                <div class="gallery-img">
+                    <a class="image-popup" href="{% static 'images/gallery/6.jpg' %}">
+                        <img src="{% static 'images/gallery/6.jpg' %}" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="map-img">
+                <img src="{% static 'images/map.jpg' %}" alt="">
+            </div>
+            <div class="canvas-contact">
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Canvas Menu end -->
+    </header>
+    <!--Header End-->
+</div>

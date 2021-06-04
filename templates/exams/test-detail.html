@@ -1,0 +1,40 @@
+{% extends 'base-defult.html' %}
+
+{% load static %}
+
+{% block breadcrumbs %}
+    {{ test.qPaperTitle }}
+{% endblock %}
+
+{% block path %}
+    <li style="color: #ff5421 !important;">{{ test.qPaperTitle }}</li>
+{% endblock %}
+
+{% block main-content %}
+    <!-- Popular Courses Section Start -->
+    <div class="rs-latest-couses orange-color pt-100 pb-100 md-pt-70 md-pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <form action="{% url 'test-detail' test.id %}" method="post" id="quiz-form">
+                        {% csrf_token %}
+                        {% for test in test.test_set.all %}
+                            <h3>
+                                {{ forloop.counter }}. {{ test.question }}
+                            </h3>
+                            <input required type="radio" name="q{{ forloop.counter }}" id="q{{ forloop.counter }}a" value="a"/>&nbsp;&nbsp;a. {{ test.optionA }}
+                            <br/>
+                            <input required type="radio" name="q{{ forloop.counter }}" id="q{{ forloop.counter }}b" value="b"/>&nbsp;&nbsp;b. {{ test.optionB }}
+                            <br/>
+                            <input required type="radio" name="q{{ forloop.counter }}" id="q{{ forloop.counter }}c" value="c"/>&nbsp;&nbsp;c. {{ test.optionC }}
+                            <br/>
+                            <input required type="radio" name="q{{ forloop.counter }}" id="q{{ forloop.counter }}d" value="d"/>&nbsp;&nbsp;d. {{ test.optionD }}
+                            <br><br>
+                        {% endfor %}
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

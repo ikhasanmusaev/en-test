@@ -1,0 +1,59 @@
+{% extends 'base-defult.html' %}
+
+{% load static %}
+
+{% block breadcrumbs %}
+    Аудио задание
+{% endblock %}
+
+{% block path %}
+    <li style="color: #ff5421 !important;">Аудио задание</li>
+{% endblock %}
+
+{% block main-content %}
+    <!-- Popular Courses Section Start -->
+    <div class="rs-latest-couses orange-color pt-100 pb-100 md-pt-70 md-pb-70">
+        <div class="container">
+            <div class="row">
+                {% for listening in all_listening %}
+                    <div class="col-lg-6 mb-40">
+                        <div class="course-item">
+                            <div class="course-image">
+                                <a href="#">
+{#                                    <img src="{% static 'images/courses/home6/style1/1.png' %}" alt="images">#}
+                                    <img src="https://i0.pngocean.com/files/894/911/797/computer-icons-computer-software-others.jpg" alt="images">
+                                </a>
+                            </div>
+                            <div class="course-info">
+                                <ul class="meta-part">
+                                    <li><span class="price">Level: {{ listening.level }} </span></li>
+                                    <li class="user"><i class="fa fa-user"></i> 245</li>
+                                </ul>
+                                <h3 class="course-title">
+                                    <a href="{% url 'listening-detail' listening.id %}">
+                                        {{ listening.title }}
+                                    </a>
+                                </h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+{#                                        <ul>#}
+{#                                            <li class="ratings">#}
+{#                                                <i class="fa fa-star"></i>#}
+{#                                                <i class="fa fa-star"></i>#}
+{#                                                <i class="fa fa-star"></i>#}
+{#                                                (05)#}
+{#                                            </li>#}
+{#                                        </ul>#}
+                                    </div>
+                                    <div class="btn-part">
+                                        <a href="#">Пройти тест<i class="flaticon-right-arrow"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

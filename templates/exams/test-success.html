@@ -1,0 +1,17 @@
+{% extends 'base-defult.html' %}
+
+{% load static %}
+
+{% block main-content-root %}
+    <div class="jumbotron text-center">
+        <h3 class="display-3">Великолепно!</h3>
+        <p class="lead"><strong>Вы закончили тест. Ваш результат {{ result.score }} из {{ result.test_object.total_of_questions }}. Ваш уровень {{ result.get_level }}</strong></p>
+        <hr>
+        <p>
+            Ещё раз попробовать? <a href="{% url 'test-list' %}">Тесты</a>
+        </p>
+        <p class="lead">
+            <a class="btn btn-primary btn-sm" href="{% url 'index' %}" role="button">Continue to homepage</a>
+        </p>
+    </div>
+{% endblock %}

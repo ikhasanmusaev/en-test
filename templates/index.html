@@ -1,0 +1,986 @@
+{% extends 'base-wide.html' %}
+
+{% load static %}
+
+{% block main-content %}
+    <div class="main-content">
+        <!-- Banner Section Start -->
+        <div id="rs-banner" class="rs-banner style9">
+            <div class="container relative">
+                <div class="row">
+                    <div class="banner-content">
+                        <h6 class="banner-title mb-20">ТЕСТЫ НА ОПРЕДЕЛЕНИЕ УРОВНЯ АНГЛИЙСКОГО ЯЗЫКА</h6>
+                        <div class="desc mb-41">Пройдите тесты и определите свой уровень английского</div>
+                        <div class="banner-btn">
+                            <a class="readon purple-btn" href="{% url 'test-list' %}">Начать</a>
+                        </div>
+                    </div>
+                    <div class="shape-img">
+                        <div class="spiner one">
+
+                            <img class="up-down-new " src="{% static 'images/banner/home11/shape/1.png' %}"
+                                 alt="images">
+
+                        </div>
+                        <div class="spiner two">
+                            <img class="left-right-new" src="{% static 'images/banner/home11/shape/2.png' %}"
+                                 alt="images">
+
+                        </div>
+                        <div class="spiner three">
+                            <img class="up-down-new " src="{% static 'images/banner/home11/shape/3.png' %}"
+                                 alt="images">
+
+                        </div>
+                        <div class="spiner four">
+                            <img class="left-right-new" src="{% static 'images/banner/home11/shape/4.png' %}"
+                                 alt="images">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-icon">
+                <ul class="icon-cart">
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Banner Section End -->
+
+        <!-- Features Section start -->
+        <div id="rs-features" class="rs-features style3 pt-100 pb-100 md-pt-70 md-pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 md-mb-40">
+                        <div class="features-item">
+                            <img src="{% static 'images/features/style3/bg/1.png' %}" alt="images">
+                            <div class="content-part">
+                                <div class="icon-part">
+                                    <img src="{% static 'images/features/style3/icons/1.png' %}" alt="">
+                                </div>
+                                <h4 class="title"><a href="#">Healthy Meals</a></h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipisic ing elit,
+                                    sed eius .incididunt
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 md-mb-40">
+                        <div class="features-item">
+                            <img src="{% static 'images/features/style3/bg/2.png' %}" alt="images">
+                            <div class="content-part">
+                                <div class="icon-part">
+                                    <img src="{% static 'images/features/style3/icons/2.png' %}" alt="">
+                                </div>
+                                <h4 class="title"><a href="#">Children Safety</a></h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipisic ing elit,
+                                    sed eius .incididunt
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 sm-mb-40">
+                        <div class="features-item">
+                            <img src="{% static 'images/features/style3/bg/3.png' %}" alt="images">
+                            <div class="content-part">
+                                <div class="icon-part">
+                                    <img src="{% static 'images/features/style3/icons/3.png' %}" alt="">
+                                </div>
+                                <h4 class="title"><a href="#">Cute Environment</a></h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipisic ing elit,
+                                    sed eius .incididunt
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="features-item">
+                            <img src="{% static 'images/features/style3/bg/4.png' %}" alt="images">
+                            <div class="content-part">
+                                <div class="icon-part">
+                                    <img src="{% static 'images/features/style3/icons/4.png' %}" alt="">
+                                </div>
+                                <h4 class="title"><a href="">Creative Learning</a></h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipisic ing elit,
+                                    sed eius .incididunt
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features Section End -->
+
+        <!-- About Section Start -->
+        <div class="rs-about style11 pb-100 md-pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 md-mb-30">
+                        <div class="img-part js-tilt">
+                            <img src="https://www.wallstreetenglish.ru/wp-content/themes/wse-corporate-re/img/about/girl.png"
+                                 alt="images">
+                            {#                            <img src="{% static 'images/about/home11/about.png' %}" alt="images">#}
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pl-65 md-pl-15 col-md-12">
+                        <div class="sec-title2">
+                            <div class="sub-title">
+                                О нас
+                            </div>
+                            <h2 class="title purple-color mb-30">ОДНА ШКОЛА — ОДИН МЕТОД</h2>
+                            <p class="desc mb-45">
+                                На протяжении полувека мы разрабатывали, а потом проверяли и совершенствовали нашу
+                                методику — Смешанный Метод Обучения английскому языку. Его суть заключается в
+                                оптимальном сочетании самостоятельного приобретения знаний на нашей онлайнплатформе и
+                                практических занятия с квалифицированным преподавателем. Уроки с преподавателями
+                                доступны как в центрах, так ионлайн, это обеспечивает полную доступность, удобство и
+                                безопасность. Независимо от того, посещает ли студент учебные центры, качество
+                                образования остается неизменно высоким. А поддержка персонального наставника поможет
+                                достичь поставленную цель.
+                            </p>
+                        </div>
+                        <div class="btn-part">
+                            <a class="readon purple-btn" href="{% url 'about' %}">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Section End -->
+
+        <!-- Categories Section Start -->
+        <div id="rs-categories" class="rs-categories home11-style">
+            <div class="row padding-0">
+                <div class="col-lg-5 img-part">
+
+                </div>
+                <div class="col-lg-7 padding-0">
+                    <div class="main-part">
+                        <div class="sec-title2 mb-40 md-mb-25">
+                            <div class="sub-title">What We Do</div>
+                            <h2 class="title purple-color">Our Programs</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 mb-40">
+                                <div class="categories-item">
+                                    <div class="icon-part">
+                                        <img src="{% static 'images/categories/home11/icons/1.png' %}" alt="">
+                                    </div>
+                                    <div class="content-part">
+                                        <h4 class="title"><a href="#">Kindergarten (3 – 4 years)</a></h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                            adipisic ing elit incididunt.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-40">
+                                <div class="categories-item">
+                                    <div class="icon-part">
+                                        <img src="{% static 'images/categories/home11/icons/2.png' %}" alt="">
+                                    </div>
+                                    <div class="content-part">
+                                        <h4 class="title"><a href="#">Pre-K Program (4 – 5 years)</a></h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                            adipisic ing elit incididunt.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-40">
+                                <div class="categories-item">
+                                    <div class="icon-part">
+                                        <img src="{% static 'images/categories/home11/icons/3.png' %}" alt="">
+                                    </div>
+                                    <div class="content-part">
+                                        <h4 class="title"><a href="#">Before/After School (6 years)</a></h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                            adipisic ing elit incididunt.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-40">
+                                <div class="categories-item">
+                                    <div class="icon-part">
+                                        <img src="{% static 'images/categories/home11/icons/4.png' %}" alt="">
+                                    </div>
+                                    <div class="content-part">
+                                        <h4 class="title"><a href="#">Kindergarten (3 – 4 years)</a></h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                            adipisic ing elit incididunt.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 sm-mb-40">
+                                <div class="categories-item">
+                                    <div class="icon-part">
+                                        <img src="{% static 'images/categories/home11/icons/5.png' %}" alt="">
+                                    </div>
+                                    <div class="content-part">
+                                        <h4 class="title"><a href="#">Outdoor Play Time</a></h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                            adipisic ing elit incididunt.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="categories-item">
+                                    <div class="icon-part">
+                                        <img src="{% static 'images/categories/home11/icons/6.png' %}" alt="">
+                                    </div>
+                                    <div class="content-part">
+                                        <h4 class="title"><a href="#">Preschool (2 – 3 years)</a></h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                            adipisic ing elit incididunt.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Categories Section End -->
+
+        <!-- Popular Courses Section Start -->
+        <div id="rs-popular-courses" class="rs-popular-courses home11-style pt-100 pb-100 md-pt-70 md-pb-70">
+            <div class="container">
+                <div class="sec-title2 text-center">
+                    <div class="sub-title">Classes</div>
+                    <h2 class="title purple-color">Popular Classes</h2>
+                </div>
+                <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30"
+                     data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"
+                     data-dots="false" data-nav="true" data-nav-speed="false" data-center-mode="false"
+                     data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false"
+                     data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false"
+                     data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
+                     data-md-device="3" data-md-device-nav="false" data-md-device-dots="false">
+                    <div class="courses-item">
+                        <div class="img-part">
+{#                            <img src="{% static 'images/courses/home11/1.jpg' %}" alt="">#}
+                            <img src="https://cvox.imgix.net/images/campaign_6204/5540b09c3115b_2894e685b7bff3e8919ee0f9d68640f7.jpg" alt="">
+                        </div>
+                        <div class="content-part text-center">
+                            <div class="course-body">
+                                <h3 class="title"><a href="#">Alphabet Matching Class</a></h3>
+                                <p>
+                                    Cras ultricies lacus consectetur, consectetur
+                                    scelerisque arcu urabitur
+                                </p>
+                            </div>
+                            <div class="bottom-part">
+                                <div class="course-footer">
+                                    <span class="label">Age</span>
+                                    <span class="desc">5-6 Years</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="label">Price</span>
+                                    <span class="desc">$20/Day</span>
+
+                                </div>
+                                <div class="course-footer border-none">
+                                    <span class="label">Size</span>
+                                    <span class="desc">15 Seats</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="btn-part">
+                            <a href="#"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="courses-item">
+                        <div class="img-part">
+{#                            <img src="{% static 'images/courses/home11/1.jpg' %}" alt="">#}
+                            <img src="https://cvox.imgix.net/images/campaign_6204/5540b09c3115b_2894e685b7bff3e8919ee0f9d68640f7.jpg" alt="">
+                        </div>
+                        <div class="content-part text-center">
+                            <div class="course-body">
+                                <h3 class="title"><a href="#">Practical Activities</a></h3>
+                                <p>
+                                    Cras ultricies lacus consectetur, consectetur
+                                    scelerisque arcu urabitur
+                                </p>
+                            </div>
+                            <div class="bottom-part">
+                                <div class="course-footer">
+                                    <span class="label">Age</span>
+                                    <span class="desc">5-6 Years</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="label">Price</span>
+                                    <span class="desc">$20/Day</span>
+
+                                </div>
+                                <div class="course-footer border-none">
+                                    <span class="label">Size</span>
+                                    <span class="desc">15 Seats</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="btn-part">
+                            <a href="#"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="courses-item">
+                        <div class="img-part">
+{#                            <img src="{% static 'images/courses/home11/1.jpg' %}" alt="">#}
+                            <img src="https://cvox.imgix.net/images/campaign_6204/5540b09c3115b_2894e685b7bff3e8919ee0f9d68640f7.jpg" alt="">
+                        </div>
+                        <div class="content-part text-center">
+                            <div class="course-body">
+                                <h3 class="title"><a href="#">Social Interaction</a></h3>
+                                <p>
+                                    Cras ultricies lacus consectetur, consectetur
+                                    scelerisque arcu urabitur
+                                </p>
+                            </div>
+                            <div class="bottom-part">
+                                <div class="course-footer">
+                                    <span class="label">Age</span>
+                                    <span class="desc">5-6 Years</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="label">Price</span>
+                                    <span class="desc">$20/Day</span>
+
+                                </div>
+                                <div class="course-footer border-none">
+                                    <span class="label">Size</span>
+                                    <span class="desc">15 Seats</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="btn-part">
+                            <a href="#"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="courses-item">
+                        <div class="img-part">
+                            <img src="{% static 'images/courses/home11/1.jpg' %}" alt="">
+                        </div>
+                        <div class="content-part text-center">
+                            <div class="course-body">
+                                <h3 class="title"><a href="#">Creative Learning</a></h3>
+                                <p>
+                                    Cras ultricies lacus consectetur, consectetur
+                                    scelerisque arcu urabitur
+                                </p>
+                            </div>
+                            <div class="bottom-part">
+                                <div class="course-footer">
+                                    <span class="label">Age</span>
+                                    <span class="desc">5-6 Years</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="label">Price</span>
+                                    <span class="desc">$20/Day</span>
+
+                                </div>
+                                <div class="course-footer border-none">
+                                    <span class="label">Size</span>
+                                    <span class="desc">15 Seats</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="btn-part">
+                            <a href="#"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="courses-item">
+                        <div class="img-part">
+                            <img src="{% static 'images/courses/home11/1.jpg' %}" alt="">
+                        </div>
+                        <div class="content-part text-center">
+                            <div class="course-body">
+                                <h3 class="title"><a href="#">Then makes lot of game</a></h3>
+                                <p>
+                                    Cras ultricies lacus consectetur, consectetur
+                                    scelerisque arcu urabitur
+                                </p>
+                            </div>
+                            <div class="bottom-part">
+                                <div class="course-footer">
+                                    <span class="label">Age</span>
+                                    <span class="desc">5-6 Years</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="label">Price</span>
+                                    <span class="desc">$20/Day</span>
+
+                                </div>
+                                <div class="course-footer border-none">
+                                    <span class="label">Size</span>
+                                    <span class="desc">15 Seats</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="btn-part">
+                            <a href="#"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Popular Courses Section End -->
+
+        <!-- CTA Section Start -->
+        <div class="rs-cta  home11-style pt-100 pb-100 md-pt-70 md-pb-70">
+            <div class=" wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms">
+                <div class="content  text-center">
+                    <div class="sec-title2 mb-40 ">
+{#                        <div class="sub-title white-color"></div>#}
+                        <h2 class="title white-color">ХОТИТЕ ПРОЙТИ АКАДЕМИЧЕСКИЙ ТЕСТ ПО ENGLISH?</h2>
+                        <div class="desc white-color">Решили пройти академический тест на уровень английского? Это
+                            значит, что вы на верном пути к достижению цели.
+                            Объективная проверка вашего текущего уровня знаний – первый правильный шаг в изучении
+                            английского языка. Тест на знание английского в Wall Street English – это не экзамен или
+                            испытание. К нему не надо готовиться, его не следует бояться. Академический тест нужен для
+                            того, чтобы подобрать для вас максимально комфортную и результативную программу обучения.
+                        </div>
+                    </div>
+                    <div class="btn-part">
+                        <a class="readon white-color" href="{% url 'test-list' %}">Попробовать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CTA Section End -->
+
+        <!-- Choose Section Start -->
+        <div class="why-choose-us style2 gray-bg3 pt-100 pb-100 md-pt-70 md-pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 order-last">
+                        <div class="video-wrap md-mb-40">
+{#                            <img src="{% static 'images/choose/why.png' %}" alt="">#}
+                            <img src="https://www.english.com/blog/wp-content/uploads/2019/10/AL1381883_Original1.jpg" alt="">
+                            <a class="popup-videos" href="https://www.youtube.com/watch?v=atMUy_bPoQI">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="sec-title2 mb-40">
+                            <div class="sub-title">specialty</div>
+                            <h2 class="title purple-color">Why Choose Us</h2>
+                            <div class="desc pr-124 md-pr-15">Lorem ipsum dolor sit amet, consectetur adipisic ing elit,
+                                sed eius to mod tempor incididunt ut labore orem ipsum dolor sit amet, consec tetur
+                                adipisic ing elit, sed eius to mod incididunt
+                            </div>
+                        </div>
+                        <div class="facilities-two">
+                            <div class="row">
+                                <div class="col-lg-6 mb-40 md-mb-25 col-md-6">
+                                    <div class="content-part">
+                                        <div class="icon-part purple-bg">
+                                            <img src="{% static 'images/choose/icons/1.png' %}" alt="">
+                                        </div>
+                                        <div class="text-part">
+                                            <h4 class="title">Full Day Sessions</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-40 md-mb-25 col-md-6 single-facility">
+                                    <div class="content-part">
+                                        <div class="icon-part pink-bg">
+                                            <img src="{% static 'images/choose/icons/2.png' %}" alt="">
+                                        </div>
+                                        <div class="text-part">
+                                            <h4 class="title">Expert Teachers​</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 sm-mb-40 col-md-6 single-facility">
+                                    <div class="content-part">
+                                        <div class="icon-part orange-bg">
+                                            <img src="{% static 'images/choose/icons/3.png' %}" alt="">
+                                        </div>
+                                        <div class="text-part">
+                                            <h4 class="title">Fully Equiped​</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 single-facility">
+                                    <div class="content-part">
+                                        <div class="icon-part green-bg">
+                                            <img src="{% static 'images/choose/icons/4.png' %}" alt="">
+                                        </div>
+                                        <div class="text-part">
+                                            <h4 class="title">Garden Center</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Choose Section End -->
+
+        <!-- Testimonial Section Start -->
+        <div class="rs-testimonial home11-style pt-100 pb-100 md-pt-70 md-pb-70">
+            <div class="container">
+                <div class="sec-title2 text-center mb-40">
+                    <div class="sub-title">Testimonials</div>
+                    <h2 class="title purple-color">Our Happy Parents</h2>
+                </div>
+                <div class="rs-carousel owl-carousel" data-loop="true" data-items="2" data-margin="30"
+                     data-autoplay="true" data-autoplay-timeout="7000" data-smart-speed="2000" data-dots="true"
+                     data-nav="false" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="false"
+                     data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false"
+                     data-ipad-device-dots="true" data-ipad-device2="1" data-ipad-device-nav2="false"
+                     data-ipad-device-dots2="true" data-md-device="2" data-md-device-nav="false"
+                     data-md-device-dots="true">
+                    <div class="testi-item">
+                        <div class="row">
+                            <div class="col-lg-4 md-mb-30 col-md-4">
+                                <div class="user-img">
+{#                                    <img src="{% static 'images/testimonial/home11/1.png' %}" alt="">#}
+                                    <img src="https://i.pinimg.com/736x/52/ac/af/52acafd4d94f2c55420755aa0127e9ae.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <div class="user-info">
+                                    <div class="desc">Sed ut perspiciatis unde omnis iste natus error sit vo luptatem.
+                                        Education is the passport to the future for tomorrow belongs. Tomor row belongs
+                                        to those who prepare it today.
+                                    </div>
+                                    <a class="name" href="#">Mahadi Monsura</a>
+                                    <p class="position"><span>Kerthi</span>'s Parents</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-item">
+                        <div class="row">
+                            <div class="col-lg-4 md-mb-30 col-md-4">
+                                <div class="user-img">
+{#                                    <img src="{% static 'images/testimonial/home11/2.png' %}" alt="">#}
+                                    <img src="https://i.pinimg.com/736x/52/ac/af/52acafd4d94f2c55420755aa0127e9ae.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <div class="user-info">
+                                    <div class="desc"> Tomor row belongs to those who pre pare for it today. Sed ut
+                                        perspiciatis unde omnis iste natus error sit vo luptatem. Education is the
+                                        passport to the future for tomorrow.
+                                    </div>
+                                    <a class="name" href="#">Istiak Ahmed</a>
+                                    <p class="position"><span>Priya</span>'s Parents</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-item">
+                        <div class="row">
+                            <div class="col-lg-4 md-mb-30 col-md-4">
+                                <div class="user-img">
+{#                                    <img src="{% static 'images/testimonial/home11/1.png' %}" alt="">#}
+                                    <img src="https://i.pinimg.com/736x/52/ac/af/52acafd4d94f2c55420755aa0127e9ae.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <div class="user-info">
+                                    <div class="desc"> Tomorrow belongs to those who pre pare for it today. Education is
+                                        the passport to the future for tomorrow belongs to Sed ut perspi ciatis unde
+                                        omnis iste natus error sit blow.
+                                    </div>
+                                    <a class="name" href="#">Masud Rana</a>
+                                    <p class="position"><span>Sidhu</span>'s Parents</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial Section End -->
+
+        <!-- Gallery Section Start -->
+{#        <div class="rs-gallery home11-style pb-100 md-pb-70">#}
+{#            <div class="container">#}
+{#                <div class="row">#}
+{#                    <div class="col-lg-4 md-mb-30">#}
+{#                        <div class="gallery-part">#}
+{#                            <div class="gallery-img">#}
+{#                                <img src="{% static 'images/gallery/home11/1.jpg' %}" alt="">#}
+{#                                <div class="content-part">#}
+{#                                    <h2 class="title">Our Gallery</h2>#}
+{#                                </div>#}
+{#                                <div class="gallery-info">#}
+{#                                    <h2 class="title-part">Our Gallery</h2>#}
+{#                                    <p>#}
+{#                                        Lorem ipsum dolor sit amet, of#}
+{#                                        consectetur adipiscing elit. is dictum risus non suscip#}
+{#                                    </p>#}
+{#                                    <div class="btn-part">#}
+{#                                        <a href="#">View All<i class="flaticon-right-arrow"></i></a>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="col-lg-4 md-mb-30">#}
+{#                        <div class="gallery-part">#}
+{#                            <div class="gallery-img">#}
+{#                                <img src="{% static 'images/gallery/home11/2.jpg' %}" alt="">#}
+{#                                <div class="content-part">#}
+{#                                    <h2 class="title">Our Timetable</h2>#}
+{#                                </div>#}
+{#                                <div class="gallery-info">#}
+{#                                    <h2 class="title-part">Our Timetable</h2>#}
+{#                                    <p>#}
+{#                                        Lorem ipsum dolor sit amet, of#}
+{#                                        consectetur adipiscing elit. is dictum risus non suscip#}
+{#                                    </p>#}
+{#                                    <div class="btn-part">#}
+{#                                        <a href="#">View All<i class="flaticon-right-arrow"></i></a>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="col-lg-4">#}
+{#                        <div class="gallery-part">#}
+{#                            <div class="gallery-img">#}
+{#                                <img src="{% static 'images/gallery/home11/3.jpg' %}" alt="">#}
+{#                                <div class="content-part">#}
+{#                                    <h2 class="title">Pricing Table</h2>#}
+{#                                </div>#}
+{#                                <div class="gallery-info">#}
+{#                                    <h2 class="title-part">Pricing Table</h2>#}
+{#                                    <p>#}
+{#                                        Lorem ipsum dolor sit amet, of#}
+{#                                        consectetur adipiscing elit. is dictum risus non suscip#}
+{#                                    </p>#}
+{#                                    <div class="btn-part">#}
+{#                                        <a href="#">View All<i class="flaticon-right-arrow"></i></a>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+        <!-- Gallery  Section Start -->
+
+        <!-- Newsletter section start -->
+        <div class="rs-newsletter style2 home11-style pt-100 pb-100">
+            <div class="container">
+                <div class="newsletter-wrap">
+                    <div class="row y-middle">
+                        <div class="col-lg-7 md-mb-30 col-md-12">
+                            <div class="sec-title2">
+                                <h2 class="title white-color">Subscribe to Our Newsletter!</h2>
+                                <div class="sub-title white-color">Subscribe Newsletter</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-12">
+                            <form class="newsletter-form">
+                                <input type="email" name="email" placeholder="Enter Your Email" required="">
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter section end -->
+
+        <!-- Team Section Start -->
+{#        <div id="rs-team" class="rs-team home11-style gray-bg3 pt-100 pb-100 md-pt-70 md-pb-70">#}
+{#            <div class="container">#}
+{#                <div class="sec-title2 text-center mb-50 md-mb-30">#}
+{#                    <div class="sub-title">Meet Our Staffs</div>#}
+{#                    <h2 class="title purple-color">Excellent Teachers</h2>#}
+{#                </div>#}
+{#                <div class="rs-carousel owl-carousel nav-style2" data-loop="true" data-items="4" data-margin="30"#}
+{#                     data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"#}
+{#                     data-dots="false" data-nav="true" data-nav-speed="false" data-center-mode="false"#}
+{#                     data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false"#}
+{#                     data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false"#}
+{#                     data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="false"#}
+{#                     data-md-device="4" data-md-device-nav="true" data-md-device-dots="false">#}
+{#                    <div class="team-item">#}
+{#                        <div class="team-thumbnail">#}
+{#                            <div class="team-img">#}
+{#                                <img src="{% static 'images/team/style1/1.jpg' %}" alt="">#}
+{#                                <ul class="team-social-link">#}
+{#                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                            <div class="team-header">#}
+{#                                <h4 class="name"><a href="team-singal.html">Sonia Akther</a></h4>#}
+{#                                <span class="subject">Professor</span>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="team-item">#}
+{#                        <div class="team-thumbnail">#}
+{#                            <div class="team-img">#}
+{#                                <img src="{% static 'images/team/style1/2.jpg' %}" alt="">#}
+{#                                <ul class="team-social-link">#}
+{#                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                            <div class="team-header">#}
+{#                                <h4 class="name"><a href="team-singal.html">Mikel Lara</a></h4>#}
+{#                                <span class="subject">Cse Student</span>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="team-item">#}
+{#                        <div class="team-thumbnail">#}
+{#                            <div class="team-img">#}
+{#                                <img src="{% static 'images/team/style1/3.jpg' %}" alt="">#}
+{#                                <ul class="team-social-link">#}
+{#                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                            <div class="team-header">#}
+{#                                <h4 class="name"><a href="team-singal.html">Tony Flower</a></h4>#}
+{#                                <span class="subject">Student</span>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="team-item">#}
+{#                        <div class="team-thumbnail">#}
+{#                            <div class="team-img">#}
+{#                                <img src="{% static 'images/team/style1/4.jpg' %}" alt="">#}
+{#                                <ul class="team-social-link">#}
+{#                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                            <div class="team-header">#}
+{#                                <h4 class="name"><a href="team-singal.html">Alex Fernando</a></h4>#}
+{#                                <span class="subject">English Teacher</span>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="team-item">#}
+{#                        <div class="team-thumbnail">#}
+{#                            <div class="team-img">#}
+{#                                <img src="{% static 'images/team/style1/5.jpg' %}" alt="">#}
+{#                                <ul class="team-social-link">#}
+{#                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                            <div class="team-header">#}
+{#                                <h4 class="name"><a href="team-singal.html">Losis Dcosta</a></h4>#}
+{#                                <span class="subject">Math Teacher</span>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="team-item">#}
+{#                        <div class="team-thumbnail">#}
+{#                            <div class="team-img">#}
+{#                                <img src="{% static 'images/team/style1/6.jpg' %}" alt="">#}
+{#                                <ul class="team-social-link">#}
+{#                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>#}
+{#                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                            <div class="team-header">#}
+{#                                <h4 class="name"><a href="team-singal.html">Mahadi Mansura</a></h4>#}
+{#                                <span class="subject">Head Teacher</span>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <!-- Team Section End -->#}
+
+        <!-- Blog Section Start -->
+        <div id="rs-blog" class="rs-blog style1 home11-style pt-94 pb-80 md-pt-64 md-pb-50">
+            <div class="container">
+                <div class="sec-title2 text-center mb-50 md-mb-30">
+                    <div class="sub-title">News & Event</div>
+                    <h2 class="title purple-color">Latest News & Event</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 pr-75 md-pr-15 md-mb-50">
+                        <div class="row align-items-center no-gutter white-bg blog-item mb-30">
+                            <div class="col-md-6">
+                                <div class="image-part">
+{#                                    <a href="#"><img src="{% static 'images/blog/style8/1.jpg' %}" alt=""></a>#}
+                                    <a href="#"><img src="http://s1.1zoom.me/prev/531/English_Little_girls_Boys_Glasses_Smile_Book_530819_300x200.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="blog-content">
+                                    <ul class="blog-meta">
+                                        <li><i class="fa fa-user-o"></i> Admin</li>
+                                        <li><i class="fa fa-calendar"></i>June 15, 2019</li>
+                                    </ul>
+                                    <h3 class="title"><a href="#">This is a great source of content
+                                        for anyone...</a></h3>
+                                    <div class="btn-part">
+                                        <a class="readon-arrow" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center no-gutter white-bg blog-item mb-30">
+                            <div class="col-md-6">
+                                <div class="blog-content">
+                                    <ul class="blog-meta">
+                                        <li><i class="fa fa-user-o"></i> Admin</li>
+                                        <li><i class="fa fa-calendar"></i>June 15, 2019</li>
+                                    </ul>
+                                    <h3 class="title"><a href="#">This is a great source of content
+                                        for anyone...</a></h3>
+                                    <div class="btn-part">
+                                        <a class="readon-arrow" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="image-part">
+{#                                    <a href="#"><img src="{% static 'images/blog/style8/2.jpg' %}" alt=""></a>#}
+                                    <a href="#"><img src="http://s1.1zoom.me/prev/531/English_Little_girls_Boys_Glasses_Smile_Book_530819_300x200.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 lg-pl-0">
+                        <div class="events-short new-style mb-30 wow">
+                            <div class="date-part bg1">
+                                <span class="month">June</span>
+                                <div class="date">20</div>
+                            </div>
+                            <div class="content-part new-padding">
+                                <div class="categorie">
+                                    <div class="timesec"><i class="fa fa-clock-o"></i> 11:00 AM -
+                                        03:00 AM
+                                    </div>
+                                </div>
+                                <h4 class="title mb-0"><a href="#">Educational Technology &
+                                    Mobile Learning</a></h4>
+                            </div>
+                        </div>
+                        <div class="events-short new-style mb-30">
+                            <div class="date-part bg2">
+                                <span class="month">June</span>
+                                <div class="date">21</div>
+                            </div>
+                            <div class="content-part new-padding">
+                                <div class="categorie">
+                                    <div class="timesec"><i class="fa fa-clock-o"></i> 11:00 AM -
+                                        03:00 AM
+                                    </div>
+                                </div>
+                                <h4 class="title mb-0"><a href="#">Educational Technology &
+                                    Mobile Learning</a></h4>
+                            </div>
+                        </div>
+                        <div class="events-short new-style mb-30">
+                            <div class="date-part bg3">
+                                <span class="month">June</span>
+                                <div class="date">22</div>
+                            </div>
+                            <div class="content-part new-padding">
+                                <div class="categorie">
+                                    <div class="timesec"><i class="fa fa-clock-o"></i> 11:00 AM -
+                                        03:00 AM
+                                    </div>
+                                </div>
+                                <h4 class="title mb-0"><a href="#">Educational Technology &
+                                    Mobile Learning</a></h4>
+                            </div>
+                        </div>
+                        <div class="events-short new-style">
+                            <div class="date-part bg4">
+                                <span class="month">June</span>
+                                <div class="date">23</div>
+                            </div>
+                            <div class="content-part new-padding">
+                                <div class="timesec"><i class="fa fa-clock-o"></i> 11:00 AM -
+                                    03:00 AM
+                                </div>
+                                <h4 class="title mb-0"><a href="#">Educational Technology &
+                                    Mobile Learning</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog Section End -->
+
+        <!-- Partner Start -->
+{#        <div class="rs-partner  pb-100 md-pb-70">#}
+{#            <div class="container">#}
+{#                <div class="rs-carousel owl-carousel" data-loop="true" data-items="4" data-margin="30"#}
+{#                     data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"#}
+{#                     data-dots="false" data-nav="true" data-nav-speed="false" data-center-mode="false"#}
+{#                     data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false"#}
+{#                     data-ipad-device="3" data-ipad-device-nav="false" data-ipad-device-dots="false"#}
+{#                     data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false"#}
+{#                     data-md-device="4" data-md-device-nav="true" data-md-device-dots="false">#}
+{#                    <div class="partner-item">#}
+{#                        <a href="#"><img src="{% static 'images/partner/1.png' %}" alt=""></a>#}
+{#                    </div>#}
+{#                    <div class="partner-item">#}
+{#                        <a href="#"><img src="{% static 'images/partner/2.png' %}" alt=""></a>#}
+{#                    </div>#}
+{#                    <div class="partner-item">#}
+{#                        <a href="#"><img src="{% static 'images/partner/3.png' %}" alt=""></a>#}
+{#                    </div>#}
+{#                    <div class="partner-item">#}
+{#                        <a href="#"><img src="{% static 'images/partner/4.png' %}" alt=""></a>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+        <!-- Partner End -->
+    </div>
+{% endblock %}
